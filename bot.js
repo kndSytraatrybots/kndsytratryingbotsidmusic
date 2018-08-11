@@ -171,7 +171,7 @@ client.on('message', message => {
         if (err) console.error(err);
     })
   if (message.content == "تحدي") {    
-        var x = ['ف ض ع د', 'ص ش خ', 'ة د ا ر ج', 'ا ر ي ة س', 'ي ت ب', 'ئ ا ع ل ة', ' ا ش ي', 'ن ح و ي ا', 'س د و ي ك ر د', 'ر ط ي ا ة' , 'ن ح ز ل و', 'ك ا ف ي س و'];
+        var x = ['ف ض ع د', 'ص ش خ', 'ة د ا ر ج', 'ا ر ي ة س', 'ي ت ب', 'ئ ا ع ل ة', ' ا ش ي', 'ن ح و ي ا', 'س د و ي ك ر ��', 'ر ط ي ا ة' , 'ن ح ز ل و', 'ك ا ف ي س و'];
         var x2 = ['ضفدع', 'شخص', 'دراجة', 'سيارة', 'بيت', 'عائلة', 'شاي', 'حيوان', 'ديسكورد', 'طيارة', 'حلزون', 'اكسيفو'];
         var x3 = Math.floor(Math.random()*x.length)
         message.channel.send(`عدل الكلمة  الآتية :${x[x3]}, لديك 25 ثانية`).then(msg1=> {
@@ -223,5 +223,5 @@ if (message.content.startsWith(prefix + 'setimg')) {
 }
 });
 
-
+});
 client.login(process.env.BOT_TOKEN);
